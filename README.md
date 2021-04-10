@@ -5,7 +5,7 @@ Hive GrokSerDe
 https://en.wikipedia.org/wiki/Grok
 
 In this project:
-* grok is a pattern matcher like the regex, but it has com pre-define patterns.
+* grok is a pattern matcher like the regex, but it has some pre-define patterns.
 * with those patterns, grok is very easy to use than regex. 
 
 ### Pre-define patterns
