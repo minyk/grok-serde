@@ -1,6 +1,16 @@
 Hive GrokSerDe
 ==============
 
+# What is Grok?
+https://en.wikipedia.org/wiki/Grok
+
+In this project:
+* grok is a pattern matcher like the regex, but it has com pre-define patterns.
+* with those patterns, grok is very easy to use than regex. 
+
+### Pre-define patterns
+See: https://github.com/thekrakken/java-grok/tree/master/src/main/resources/patterns
+
 # Use
 ```sql
 CREATE EXTERNAL TABLE access_log (
@@ -24,13 +34,14 @@ STORED AS TEXTFILE
 LOCATION 's3a://access_log/access_log';
 ```
 
-* Column names should be matched with capture name of grok pattern.
+* Column names should be matched with capture name of grok patterns.
 * `output.format.string` is not provided, serialization is not working.
 
 # TODO
 
-* Define custom pattern
+* Use custom patterns
 * More test
 
 # Acknowledgement
-This project is heavily adopted from https://github.com/varmaprr/spark
+* This project is heavily adopted from https://github.com/varmaprr/spark
+* Grok java library is from https://github.com/thekrakken/java-grok
